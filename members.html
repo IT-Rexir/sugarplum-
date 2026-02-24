@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sugarplum Haven - Members</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI', sans-serif;scroll-behavior:smooth;}
+body{background:#fff4f8;color:#4a4fa6;}
+nav{background:linear-gradient(to right, #f8a5c2, #d6b3ff);padding:15px 30px;display:flex;justify-content:space-between;align-items:center;}
+.logo{display:flex;align-items:center;gap:10px;}
+.logo img{width:60px;}
+.logo h1{color:white;}
+nav ul{list-style:none;}
+nav ul li{display:inline;margin-left:20px;}
+nav ul li a{color:white;text-decoration:none;font-weight:bold;}
+.page{padding:80px 20px;text-align:center;min-height:80vh;}
+.page h2{color:#d46aa5;margin-bottom:10px;}
+.page p.section-desc{color:#7b4fa3;margin-bottom:20px;font-size:1em;}
+
+.members-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.member-card{
+  background:white;
+  width:180px;
+  padding:15px;
+  border-radius:15px;
+  box-shadow:0 6px 15px rgba(214,179,255,0.3);
+  text-align:center;
+  
+  /* Floating animation */
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.member-card img{
+  width:100%;
+  border-radius:15px;
+  margin-bottom:10px;
+}
+
+.member-card h4{
+  color:#7b4fa3;
+}
+
+/* Floating keyframes */
+@keyframes floatSlow {
+  0% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-5px) rotate(-1deg); }
+  50% { transform: translateY(0px) rotate(0deg); }
+  75% { transform: translateY(5px) rotate(1deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+footer{background:#d46aa5;color:white;text-align:center;padding:15px;}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">
+<img src="logo.jpeg" alt="Logo">
+<h1>Sugarplum Haven</h1>
+</div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="posts.html">Posts</a></li>
+<li><a href="articles.html">Articles</a></li>
+<li><a href="resources.html">Resources</a></li>
+<li><a href="members.html">Members</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+
+<div class="page">
+<h2>Our Members</h2>
+<p class="section-desc">The creators of Sugarplum Haven and the heart of our pastel world.</p>
+
+<div class="members-container">
+<div class="member-card">
+<img src="logo.jpeg" alt="Member 1">
+<h4>Oahnna Joyce Juarez</h4>
+</div>
+<div class="member-card">
+<img src="logo.jpeg" alt="Member 2">
+<h4>Rhea Joy V. Tubio</h4>
+</div>
+<div class="member-card">
+<img src="logo.jpeg" alt="Member 3">
+<h4>Kaira Mea G. Mindajao</h4>
+</div>
+<div class="member-card">
+<img src="logo.jpeg" alt="Member 4">
+<h4>Crystal Jade Bregente</h4>
+</div>
+<div class="member-card">
+<img src="logo.jpeg" alt="Member 5">
+<h4>Cristal Jane Pepito</h4>
+</div>
+<div class="member-card">
+<img src="logo.jpeg" alt="Member 6">
+<h4>Aella T. Go</h4>
+</div>
+</div>
+</div>
+
+<footer>© 2026 Sugarplum Haven 💜</footer>
+</body>
+</html>

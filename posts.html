@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sugarplum Haven - Blog Feed</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth; /* ✅ smooth scroll */
+}
+
+body {
+  background: #fff4f8;
+  color: #5a4fa3;
+}
+
+nav {
+  background: linear-gradient(to right, #f8a5c2, #d6b3ff);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.logo h1 {
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page {
+  padding: 80px 20px;
+  min-height: 80vh;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.page h2 {
+  color: #d46aa5;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.page p.section-desc {
+  color: #7b4fa3;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Twitter-style post cards */
+.post-card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(214,179,255,0.3);
+  
+  /* Animation */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* Stagger cards */
+.post-card:nth-child(1) { animation-delay: 0.2s; }
+.post-card:nth-child(2) { animation-delay: 0.4s; }
+.post-card:nth-child(3) { animation-delay: 0.6s; }
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.post-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-info .name {
+  font-weight: bold;
+  color: #d46aa5;
+}
+
+.author-info .handle {
+  font-size: 0.85em;
+  color: #7b4fa3;
+}
+
+.post-content {
+  margin-top: 10px;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #5a4fa3;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  font-size: 0.85em;
+  color: #ff3399;
+}
+
+.post-footer span {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Simple icons for Twitter-style feel */
+.icon {
+  font-size: 1.1em;
+}
+
+/* Animation keyframes */
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  50% { opacity: 1; transform: translateY(-5px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  background: #d46aa5;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">
+<img src="logo.jpeg" alt="Logo">
+<h1>Sugarplum Haven</h1>
+</div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="posts.html">Posts</a></li>
+<li><a href="articles.html">Articles</a></li>
+<li><a href="resources.html">Resources</a></li>
+<li><a href="members.html">Members</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+
+<div class="page">
+<h2>Blog Feed</h2>
+<p class="section-desc">Lifestyle ideas, creative inspirations, and girly topics shared by our members.</p>
+
+<div class="post-card">
+  <div class="post-header">
+    <img src="images/member1.jpg" alt="Member 1">
+    <div class="author-info">
+      <span class="name">Rhea</span>
+      <span class="handle">@rhea1 · Feb 10</span>
+    </div>
+  </div>
+  <div class="post-content">
+    Discover dreamy ways to decorate your room with pastel colors and soft accents. 🩷✨
+  </div>
+  <div class="post-footer">
+    <span>💬 5</span>
+    <span>🔁 2</span>
+    <span>❤️ 30</span>
+  </div>
+</div>
+
+<div class="post-card">
+  <div class="post-header">
+    <img src="images/member2.jpg" alt="Member 2">
+    <div class="author-info">
+      <span class="name">Cristal</span>
+      <span class="handle">@cristal2 · Feb 12</span>
+    </div>
+  </div>
+  <div class="post-content">
+    Fun DIY projects with pastel-themed materials to brighten your day! 🎨💖
+  </div>
+  <div class="post-footer">
+    <span>💬 8</span>
+    <span>🔁 3</span>
+    <span>❤️ 45</span>
+  </div>
+</div>
+
+<div class="post-card">
+  <div class="post-header">
+    <img src="images/member3.jpg" alt="Member 3">
+    <div class="author-info">
+      <span class="name">Keira</span>
+      <span class="handle">@keira3 · Feb 15</span>
+    </div>
+  </div>
+  <div class="post-content">
+    Cozy lifestyle tips for hobbies, self-care, and pastel-inspired joy! 💕🌸
+  </div>
+  <div class="post-footer">
+    <span>💬 6</span>
+    <span>🔁 1</span>
+    <span>❤️ 38</span>
+  </div>
+</div>
+
+</div>
+
+<footer>© 2026 Sugarplum Haven 💜</footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sugarplum Haven - Blog</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI', sans-serif;}
+body{background:#fff4f8;color:#5a4fa3;display:flex;flex-direction:column;min-height:100vh;}
+nav{background:linear-gradient(to right, #f8a5c2, #d6b3ff);padding:15px 30px;display:flex;justify-content:space-between;align-items:center;}
+.logo{display:flex;align-items:center;gap:10px;}
+.logo img{width:60px;}
+.logo h1{color:white;}
+nav ul{list-style:none;}
+nav ul li{display:inline;margin-left:20px;}
+nav ul li a{color:white;text-decoration:none;font-weight:bold;}
+.page{padding:80px 20px;flex:1;max-width:700px;margin:0 auto;}
+.page h2{color:#d46aa5;margin-bottom:10px;text-align:center;}
+.page p.section-desc{color:#7b4fa3;margin-bottom:30px;text-align:center;font-size:1em;}
+
+/* ==== Main Content Section ==== */
+.main-content{margin-bottom:40px;}
+.main-content h3{color:#d46aa5;margin-bottom:20px;text-align:center;}
+.main-content p{color:#7b4fa3;font-size:1em;line-height:1.5;text-align:center;margin-bottom:30px;}
+
+/* Idea Cards */
+.idea-container {
+  display: flex;
+  flex-direction: column; /* vertical flow */
+  gap: 20px;
+}
+
+.idea-card{
+  background:white;
+  padding:20px;
+  border-radius:20px;
+  box-shadow:0 8px 18px rgba(214,179,255,0.3);
+  opacity:0; /* start hidden for animation */
+  transform: translateY(20px);
+  animation: floatFade 0.8s ease-out forwards;
+}
+
+/* Stagger animation delay for each card */
+.idea-card:nth-child(1){animation-delay:0.2s;}
+.idea-card:nth-child(2){animation-delay:0.4s;}
+.idea-card:nth-child(3){animation-delay:0.6s;}
+.idea-card:nth-child(4){animation-delay:0.8s;}
+.idea-card:nth-child(5){animation-delay:1s;}
+
+.idea-card h4{
+  color:#d46aa5;
+  margin-bottom:10px;
+}
+
+.idea-card p{
+  color:#7b4fa3;
+  font-size:1em;
+  line-height:1.5;
+}
+
+/* Animation Keyframes */
+@keyframes floatFade {
+  0% { opacity: 0; transform: translateY(20px); }
+  50% { opacity: 1; transform: translateY(-5px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+footer{
+  background:#d46aa5;
+  color:white;
+  text-align:center;
+  padding:15px 20px;
+  margin-top:auto; /* sticks footer to bottom if content is short */
+  font-size:1em;
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">
+<img src="logo.jpeg" alt="Logo">
+<h1>Sugarplum Haven</h1>
+</div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="posts.html">Posts</a></li>
+<li><a href="articles.html">Articles</a></li>
+<li><a href="resources.html">Resources</a></li>
+<li><a href="members.html">Members</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+
+<div class="page">
+<h2>Blog</h2>
+<p class="section-desc">The Blog section contains our main content where we share lifestyle ideas, creative inspirations, and girly topics.</p>
+
+<div class="idea-container">
+  <div class="idea-card">
+    <h4>🌸 Pastel Room Makeover</h4>
+    <p>Use soft pastel colors, cute wall decorations, and cozy accessories to make your room feel magical and comfortable.</p>
+  </div>
+
+  <div class="idea-card">
+    <h4>🎨 DIY Craft Ideas</h4>
+    <p>Create personalized stationery, small decorations, or pastel-themed gifts at home using simple materials.</p>
+  </div>
+
+  <div class="idea-card">
+    <h4>💖 Cozy Lifestyle Tips</h4>
+    <p>Spend time on hobbies, self-care, journaling, or decorating small spaces to create a cheerful and cozy life.</p>
+  </div>
+
+  <div class="idea-card">
+    <h4>🍰 Fun Baking Projects</h4>
+    <p>Try making cupcakes, cookies, or pastel-colored desserts that are both fun and Instagram-worthy.</p>
+  </div>
+
+  <div class="idea-card">
+    <h4>📚 Creative Inspirations</h4>
+    <p>Collect aesthetic ideas, mood boards, or digital artwork to fuel creativity and make your space uniquely yours.</p>
+  </div>
+</div>
+</div>
+
+<footer>© 2026 Sugarplum Haven 💜</footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sugarplum Haven - Articles</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI', sans-serif;}
+body{background:#fff4f8;color:#5a4fa3;display:flex;flex-direction:column;min-height:100vh; scroll-behavior: smooth;}
+nav{background:linear-gradient(to right, #f8a5c2, #d6b3ff);padding:15px 30px;display:flex;justify-content:space-between;align-items:center;}
+.logo{display:flex;align-items:center;gap:10px;}
+.logo img{width:60px;}
+.logo h1{color:white;}
+nav ul{list-style:none;}
+nav ul li{display:inline;margin-left:20px;}
+nav ul li a{color:white;text-decoration:none;font-weight:bold;}
+.page{padding:80px 20px;flex:1;max-width:700px;margin:0 auto;}
+.page h2{color:#d46aa5;margin-bottom:10px;text-align:center;}
+.page p.section-desc{color:#7b4fa3;margin-bottom:30px;text-align:center;font-size:1em;}
+
+/* Article Cards */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:20px;
+  box-shadow:0 8px 18px rgba(214,179,255,0.3);
+  text-align:left;
+  transition: transform 0.3s ease;
+  
+  /* Animation */
+  opacity:0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* Stagger animation for each card */
+.card:nth-child(1){animation-delay:0.2s;}
+.card:nth-child(2){animation-delay:0.4s;}
+.card:nth-child(3){animation-delay:0.6s;}
+
+.card:hover{
+  transform: translateY(-8px);
+}
+
+.card h3{
+  margin-bottom:15px;
+  color:#7b4fa3;
+}
+
+.card p{
+  color:#5a4fa3;
+  font-size:1em;
+  line-height:1.6;
+  margin-bottom:10px;
+}
+
+/* Animation keyframes */
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  50% { opacity: 1; transform: translateY(-5px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+footer{
+  background:#d46aa5;
+  color:white;
+  text-align:center;
+  padding:15px 20px;
+  margin-top:auto;
+  font-size:1em;
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">
+<img src="logo.jpeg" alt="Logo">
+<h1>Sugarplum Haven</h1>
+</div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="posts.html">Posts</a></li>
+<li><a href="articles.html">Articles</a></li>
+<li><a href="resources.html">Resources</a></li>
+<li><a href="members.html">Members</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+
+<div class="page">
+<h2>Articles</h2>
+<p class="section-desc">The Articles section includes more detailed discussions, guides, and informative write-ups.</p>
+
+<div class="card-container">
+  <div class="card">
+    <h3>Wellness & Magic: Self-Care Guide</h3>
+    <p>Maintaining a healthy mind and body is essential for creativity. This article provides step-by-step guidance on daily self-care routines, mindfulness practices, and positivity exercises to brighten your day.</p>
+    <p>Topics include morning rituals, journaling prompts, and ways to create a magical and calming personal space.</p>
+  </div>
+
+  <div class="card">
+    <h3>Creative Writing for Inspiration</h3>
+    <p>Explore the art of storytelling with pastel-themed and dreamy narratives. This guide covers character creation, plot ideas, and techniques to write inspiring short stories or blog content.</p>
+    <p>Learn how to structure stories, use imagery effectively, and make your writing engaging and whimsical.</p>
+  </div>
+
+  <div class="card">
+    <h3>DIY & Crafts: Step-by-Step Tutorials</h3>
+    <p>Get hands-on with easy DIY projects that brighten your home or create personal gifts. Each project is explained in detail with materials needed, step-by-step instructions, and tips for a pastel aesthetic.</p>
+    <p>Projects include handmade cards, wall decorations, room accessories, and creative journaling ideas.</p>
+  </div>
+</div>
+</div>
+
+<footer>© 2026 Sugarplum Haven 💜</footer>
+</body>
+</html>
